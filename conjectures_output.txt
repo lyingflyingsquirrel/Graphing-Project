@@ -1,0 +1,26 @@
+
+##### COMPUTATION FOR 4
+
+# Lower Bounds for balance_number on 2025-05-16 13:49:35
+  balance_number(x) >= -balance_number_open(x) + graph_order(x)
+  balance_number(x) >= girth(x) - wiener_index(x)
+  balance_number(x) >= -dominationNumber(x) + residue(x)
+  balance_number(x) >= minimum(graph_order(x), tan(szeged_index(x)))
+  balance_number(x) >= -is_connected(x)
+  balance_number(x) >= is_connected(x) - 1
+  balance_number(x) >= radius(x) - 1
+
+# Upper Bounds for balance_number on 2025-05-16 13:49:39
+  balance_number(x) <= graph_order(x)
+  balance_number(x) <= (residue(x) - 1)*graph_order(x)
+  balance_number(x) <= 1/min_degree(x) + wiener_index(x)
+  balance_number(x) <= graph_order(x)^average_degree(x)/max_degree(x)
+  balance_number(x) <= girth(x)^2 + dominationNumber(x)
+  balance_number(x) <= 1/matching_number(x) + size(x)
+  balance_number(x) <= maximum(tan(wiener_index(x)), 2*dominationNumber(x))
+  balance_number(x) <= min_degree(x)^diameter(x) + 1
+  balance_number(x) <= girth(x) + residue(x) + 1
+  balance_number(x) <= 10^((girth(x) - residue(x))^2)
+  balance_number(x) <= maximum(girth(x), (balance_number_open(x) + 1)/is_connected(x))
+
+###### COMPUTATION FOR 6

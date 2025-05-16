@@ -1,0 +1,8 @@
+python/.project
+python/.pydevproject
+
+c/nbproject
+
+#build folders
+python/build
+c/build

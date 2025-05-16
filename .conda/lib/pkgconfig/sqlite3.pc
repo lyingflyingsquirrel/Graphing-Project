@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/Users/liamdyer/Documents/Program Save Files/VSCode Save Files/Graphing Project/.conda
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.49.2
+Libs: -L${libdir} -lsqlite3
+Libs.private:  -lz 
+Cflags: -I${includedir}

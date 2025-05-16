@@ -1,0 +1,11 @@
+prefix=/Users/liamdyer/Documents/Program Save Files/VSCode Save Files/Graphing Project/.conda
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/liamdyer/Documents/Program Save Files/VSCode Save Files/Graphing Project/.conda/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.6
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
